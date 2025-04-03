@@ -1,12 +1,9 @@
 import '../styles/main.scss';
 
-
-/* MENU */
-
-const hamburguerButton = document.querySelector('.header__hamburger');
+const hamburgerButton = document.querySelector('.header__hamburger');
 const nav = document.querySelector('.header__nav');
 
-hamburguerButton.addEventListener('click', () => {
-    hamburguerButton.classList.toggle('active');
-    nav.classList.toggle('active');
+hamburgerButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('active');
+    hamburgerButton.setAttribute('aria-expanded', isOpen);
 });

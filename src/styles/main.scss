@@ -7,9 +7,15 @@
 // layout
 @import "layout/containers";
 @import "layout/header";
+@import "layout/footer";
 
 // modules
 @import "modules/buttons";
+@import "modules/animations";
+
+// pages
+@import "pages/index";
+
 
 
 // dependencies
