@@ -1,0 +1,43 @@
+body{
+    font-family: $principal-font;
+}
+
+/*------------------------------------*\
+  LOGO
+\*------------------------------------*/
+
+.header__logo{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    
+    transition: all 0.2s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+    &:hover{
+        //color: darken($morado-principal, 10%);
+        transform: scale(1.01);
+    }
+
+    &__text{
+        letter-spacing: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-left: .4rem;
+    }
+}
+
+/*------------------------------------*\
+  LINKS
+\*------------------------------------*/
+
+a:hover {
+    color: red;
+
+    border-bottom: solid 1px;
+}

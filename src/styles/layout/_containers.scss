@@ -1,0 +1,14 @@
+@use '../base/mixins' as m;
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    
+    @include m.breakpoint(medium){
+        width: 90%;
+    }
+    @include m.breakpoint(large){
+        width: 1200px;
+    }
+}
