@@ -1,0 +1,12 @@
+@use "../base/mixins" as m;
+.grid{
+    display: grid;
+    gap: 2rem;
+    @include m.breakpoint(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.breakpoint(large){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

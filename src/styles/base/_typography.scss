@@ -5,7 +5,11 @@ body{
 /*------------------------------------*\
   LOGO
 \*------------------------------------*/
-
+.header{
+    a:hover{
+        text-decoration: none;
+    }
+}
 .header__logo{
     font-weight: 900;
     font-size: 1.5rem;
@@ -36,11 +40,17 @@ body{
   TITLES
 \*------------------------------------*/
 
+h1{
+    color: $morado-principal;
+    text-align: center;
+}
+
 h2{
     font-size: 2rem;
     font-weight: 900;
     text-align: left;
     color: $morado-principal;
+    text-align: center;
 }
 
 /*------------------------------------*\
@@ -76,3 +86,18 @@ nav a:hover {
     border-bottom: solid 1px;
 }
 
+/*------------------------------------*\
+  ICONS
+\*------------------------------------*/
+
+.fa-brands{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    transition: all .2s;
+
+    &:hover{
+        cursor: pointer;
+        color: $amarillo;
+        transform: scale(1.1);
+    }
+}

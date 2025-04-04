@@ -8,15 +8,19 @@
 @import "layout/containers";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/grid";
 
 // modules
 @import "modules/buttons";
 @import "modules/animations";
 @import "modules/swiper";
 @import "modules/forms";
+@import "modules/card";
+@import "modules/table";
 
 // pages
 @import "pages/index";
+@import "pages/detalle";
 
 
 
