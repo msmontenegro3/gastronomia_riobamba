@@ -1,0 +1,72 @@
+
+/*------------------------------------*\
+  SLIDER
+\*------------------------------------*/
+.swiper {
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+
+    &__content{
+        text-align: center;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+        display: block;
+    }
+
+    &-slide{
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.slide__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.762); /* Ajusta la opacidad (0.5 = 50%) */
+    z-index: 1;
+}
+
+.slide__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2; /* Asegura que esté encima del overlay */
+
+    h3 {
+        color: $amarillo;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1rem;
+        width: 60%;
+    }
+}
+
+
+/*------------------------------------*\
+  BUTTONS
+\*------------------------------------*/
+
+.swiper-button-prev,
+.swiper-button-next
+{
+    --swiper-navigation-size: 20px;
+    --swiper-theme-color: $fff;
+}

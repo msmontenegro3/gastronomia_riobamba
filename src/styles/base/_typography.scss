@@ -39,8 +39,17 @@ body{
 h2{
     font-size: 2rem;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
     color: $morado-principal;
+}
+
+/*------------------------------------*\
+  TEXT
+\*------------------------------------*/
+
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 /*------------------------------------*\
@@ -51,12 +60,18 @@ a{
     transition: all .2s;
 }
 
+a:hover{
+    color: $amarillo;
+    text-decoration: underline;
+}
+
 nav a {
     padding: .5rem;
 }
 
 nav a:hover {
     color: $amarillo;
+    text-decoration: none;
     background-color: darken($morado-principal, 5%);
     border-bottom: solid 1px;
 }

@@ -1,4 +1,5 @@
-button {
+@use '../base/mixins' as m;
+.header button  {
     cursor: pointer;
     background-color: inherit;
     color: #fff;
@@ -9,4 +10,34 @@ button {
         background-color: #fff;
         color: #000;
     }
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: $morado-principal;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $morado-claro;
+        color: #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.409);
+    }
+
+    @include m.breakpoint(medium){
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0;
+        border-radius: 10px;
+    }
+    
 }

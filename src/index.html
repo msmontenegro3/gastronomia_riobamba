@@ -18,15 +18,93 @@
 
     <main>
 
-        <article id="nosotros" class="container">
-            <h2>Quiénes somos</h2>
+        <section id="nosotros" class="container">
+            <h2>QUIÉNES SOMOS</h2>
             <p>Somos tu guía para descubrir los restaurantes más bonitos y con mejor ambiente de Riobamba. Encuentra lugares acogedores, con encanto y deliciosa gastronomía local.</p>
+        </section><!-- fin article -->
 
-            <a href="">Ver Restaurantes</a>
+        <article>
+            <div class="container">
+                <h2>RECOMENDACIONES DEL MES</h2>
+                <p>Cada mes, seleccionamos los lugares que nuestros visitantes aman. ¡Estos son algunos imperdibles!</p>
+            </div>
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper__content">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./img/baltimorejpg.jpg" alt="Imagen de un restaurante Baltimore">
+                    <div class="slide__overlay"></div>
+                    <div class="slide__content">
+                        <h3>Baltimore Bar Cafetería</h3>
+                        <p>Un rincón acogedor donde el aroma del café recién tostado se mezcla con delicias caseras.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/la-fortaleza.jpg" alt="Imagen de un restaurante La fortaleza">
+                    <div class="slide__overlay"></div>
+                    <div class="slide__content">
+                        <h3>La Fortaleza Steak and Wine</h3>
+                        <p>Carnes premium maduradas a la perfección, acompañadas de una selección de vinos cuidadosamente elegidos.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/brothers.jpg" alt="Imagen de un restaurante Brother's Coffee Lounge">
+                    <div class="slide__overlay"></div>
+                    <div class="slide__content">
+                        <h3>Brother's Coffee Lounge</h3>
+                        <p>Más que una cafetería, un espacio de comunidad. Combina especialidades de café de origen único con un menú de brunch innovador.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <a href="categoria.html" class="btn">Ver más restaurantes</a>
+
         </article><!-- fin article -->
+    </main> <!-- fin main -->
+
+    <aside class="container contact" id="contact">
+        <div class="contact__info">
+            <h2>¿Eres dueño de un restaurante o quieres compartir tu opinión?</h2>
+            <p>Únete a nuestra comunidad para promocionar tu negocio o escribir reseñas. ¡Juntos hacemos crecer la cultura gastronómica de Riobamba!</p>
+        </div>
+        
+        <form action="" aria-labelledby="contacto-titulo">
+            <fieldset class="form">
+                <legend>Déjanos contactarte</legend>
+        
+                <div class="form__input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required aria-describedby="nombre-ayuda">
+                    <small id="nombre-ayuda" hidden>Introduce tu nombre completo.</small>
+                </div>
+        
+                <div class="form__input">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required aria-describedby="telefono-ayuda">
+                    <small id="telefono-ayuda" hidden>Introduce un número de teléfono válido.</small>
+                </div>
+        
+                <button type="submit" class="btn" aria-label="Enviar formulario de contacto">ENVIAR CONTACTO</button>
+            
+            </fieldset>
+        </form>
+
+        <p>¡<a href="">Síguenos</a> en nuestras redes sociales para más recomendaciones y sorpresas! <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i></p>
         
 
-    </main> <!-- fin main -->
+    </aside>
     
     <include src="src/layouts/footer.html"></include><!-- footer -->
 

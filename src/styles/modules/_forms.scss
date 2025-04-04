@@ -1,0 +1,30 @@
+@use '../base/mixins' as m;
+form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+
+
+    @include m.breakpoint(medium){
+        width: 60%;
+    }
+    legend {
+        font-size: 1.6rem;
+        color: $morado-principal;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    input {
+        width: 100%;
+        padding: .5rem 1rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    input:focus {
+        outline: none;
+        border: 2px solid $amarillo;
+    }
+}
