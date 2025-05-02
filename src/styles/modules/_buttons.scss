@@ -22,13 +22,14 @@
     text-transform: uppercase;
     font-weight: 700;
 
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
     &:hover{
         cursor: pointer;
         background-color: $morado-claro;
         color: #000;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.409);
+        text-decoration: none;
     }
 
     @include m.breakpoint(medium){

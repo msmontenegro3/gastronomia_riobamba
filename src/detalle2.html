@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <title>Restaurante</title>
 </head>
 <body>
@@ -10,7 +12,26 @@
 
     <main>
         <div class="banner">
-            <img src="img/brothers.jpg" alt="Fotografía de la puerta principal del restaurante Brothers">
+          <picture>
+            <source 
+              media="(max-width: 600px)" 
+              srcset="./img/brothers-v2.jpg?as=webp" 
+              type="image/webp" />
+            
+            <source 
+              media="(max-width: 600px)" 
+              srcset="./img/brothers-v2.jpg" 
+              type="image/jpeg" />
+          
+            <source 
+              srcset="./img/brothers.jpg?as=webp" 
+              type="image/webp" />
+          
+            <img 
+              src="./img/brothers.jpg" 
+              alt="Imagen de un restaurante Brother's Coffee Lounge" />
+          </picture>
+          
         </div>
         
         <section class="container details">
@@ -37,14 +58,23 @@
                 <div class="swiper-wrapper swiper__content">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="./img/breakfast1.jpg" alt="Desayuno con tostadas y aguacate">
+                    <picture>
+                      <source srcset="./img/breakfast1.jpg?as=webp" type="image/webp" />
+                      <img src="./img/breakfast1.jpg" alt="Desayuno con tostadas y aguacate">
+                    </picture>
     
                   </div>
                   <div class="swiper-slide">
-                    <img src="./img/breakfast2.jpg" alt="Desayuno con cereal">
+                    <picture>
+                      <source srcset="./img/breakfast2.jpg?as=webp" type="image/webp" />
+                      <img src="./img/breakfast2.jpg" alt="Desayuno con cereal">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./img/breakfast3.jpg" alt="Desayuno con muffin inglés">
+                    <picture>
+                      <source srcset="./img/breakfast3.jpg?as=webp" type="image/webp" />
+                      <img src="./img/breakfast3.jpg" alt="Desayuno con muffin inglés">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
                     <video src="./img/video/pancakes.mp4" muted controls loop></video>

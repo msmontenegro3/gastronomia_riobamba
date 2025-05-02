@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <title>Restaurante</title>
 </head>
 <body>
@@ -10,7 +12,25 @@
 
     <main>
         <div class="banner">
-            <img src="img/la-fortaleza.jpg" alt="Fotografía de la puerta principal del restaurante La fortaleza">
+          <picture>
+            <source 
+              media="(max-width: 600px)" 
+              srcset="./img/la-fortaleza-v2.jpg?as=webp" 
+              type="image/webp" />
+          
+            <source 
+              media="(max-width: 600px)" 
+              srcset="./img/la-fortaleza-v2.jpg" 
+              type="image/jpeg" />
+          
+            <source 
+              srcset="./img/la-fortaleza.jpg?as=webp" 
+              type="image/webp" />
+          
+            <img 
+              src="./img/la-fortaleza.jpg" 
+              alt="Imagen de un restaurante La Fortaleza" />
+          </picture>
         </div>
         
         <section class="container details">
@@ -37,14 +57,22 @@
                 <div class="swiper-wrapper swiper__content">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="./img/carnes1.jpg" alt="Platillo con cortes de carne">
-    
+                    <picture>
+                      <source srcset="./img/carnes1.jpg?as=webp" type="image/webp" />
+                      <img src="./img/carnes1.jpg" alt="Platillo con cortes de carne">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./img/carnes2.jpg" alt="Carnes a la parrilla">
+                    <picture>
+                      <source srcset="./img/carnes2.jpg?as=webp" type="image/webp" />
+                      <img src="./img/carnes2.jpg" alt="Carnes a la parrilla">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./img/vinos.jpg" alt="Botellas de vino">
+                    <picture>
+                      <source srcset="./img/vinos.jpg?as=webp" type="image/webp" />
+                      <img src="./img/vinos.jpg" alt="Botellas de vino">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
                     <video src="./img/video/grill.mp4" muted controls loop></video>
