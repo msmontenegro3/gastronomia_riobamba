@@ -2,20 +2,16 @@ import '../styles/main.scss';
 
 // Import Swiper core and required modules
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
 
 // Init Swiper
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination, Scrollbar, Autoplay], // Aseguramos que los módulos se cargan
+  modules: [Navigation, Pagination, Scrollbar], // Aseguramos que los módulos se cargan
   direction: 'horizontal',
   loop: true,
-  autoplay: {
-    delay: 8000, 
-    disableOnInteraction: false, 
-  },
   pagination: {
       el: '.swiper-pagination',
       clickable: true, // Permite hacer clic en los puntos de paginación
