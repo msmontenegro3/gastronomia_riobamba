@@ -1,266 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">  
- 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome con carga diferida -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <title>Restaurantes</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome con carga diferida -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+
+  <title>Restaurantes</title>
 </head>
+
 <body>
-    <include src="src/layouts/header.html"></include><!-- header -->
+  <include src="src/layouts/header.html"></include><!-- header -->
 
 
-    <main>
-        <div class="container">
-            <h1>Restaurantes</h1>
-        </div>
+  <main>
+    <div class="container">
+      <h1>Restaurantes</h1>
+    </div>
 
-        <article class="cards grid container">
-            <!-- CARD -->
-            <a href="detalle.html">
-                <div class="card">
-                    <picture>
-                      <source 
-                        srcset="
+    <article class="cards grid container">
+      <!-- CARD -->
+      <a href="detalle.html">
+        <div class="card">
+          <picture>
+            <source srcset="
                           ./img/la-fortaleza.jpg?as=webp&width=400&quality=50 400w,
                           ./img/la-fortaleza.jpg?as=webp&width=800&quality=50 800w
-                        "
-                        sizes="(max-width: 768px) 400px, 800px"
-                        type="image/webp" />
-                      
-                      <source 
-                        srcset="
+                        " sizes="(max-width: 768px) 400px, 800px" type="image/webp" />
+
+            <source srcset="
                           ./img/la-fortaleza.jpg?width=400&quality=70 400w,
                           ./img/la-fortaleza.jpg?width=800&quality=70 800w
-                        "
-                        sizes="(max-width: 768px) 400px, 800px"
-                        type="image/jpeg" />
-                      <img 
-                        src="./img/la-fortaleza.jpg?width=400&quality=85"
-                        alt="Imagen de un restaurante La Fortaleza"
-                        width="400"
-                        height="auto"
-                        decoding="async" />
-                    </picture>
+                        " sizes="(max-width: 768px) 400px, 800px" type="image/jpeg" />
+            <img src="./img/la-fortaleza.jpg?width=400&quality=85" alt="Imagen de un restaurante La Fortaleza"
+              width="400" height="auto" decoding="async" />
+          </picture>
 
-                    
-                    <div class="card__text">
-                        <h2>La Fortaleza <span lang="en">Steak and Wine</span></h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
 
-            <!-- CARD -->
-            <a href="detalle2.html">
-                <div class="card">
-                  <picture>
-                    <source 
-                      srcset="
+          <div class="card__text">
+            <h2>La Fortaleza <span lang="en">Steak and Wine</span></h2>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
+
+      <!-- CARD -->
+      <a href="detalle2.html">
+        <div class="card">
+          <picture>
+            <source srcset="
                         ./img/brothers.jpg?as=webp&width=400&quality=50 400w,
                         ./img/brothers.jpg?as=webp&width=800&quality=50 800w
-                      "
-                      sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                      type="image/webp" />
+                      " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/webp" />
 
-                    <source 
-                      srcset="
+            <source srcset="
                         ./img/brothers.jpg?width=400&quality=60 400w,
                         ./img/brothers.jpg?width=800&quality=60 800w
-                      "
-                      sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                      type="image/jpeg" />
+                      " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/jpeg" />
 
-                    <img 
-                      src="./img/brothers.jpg?width=400&quality=70"
-                      alt="Imagen de un restaurante Brother's Coffee Lounge"
-                      width="400"
-                      height="267"
-                      decoding="async"
-                    />
-                  </picture>
+            <img src="./img/brothers.jpg?width=400&quality=70" alt="Imagen de un restaurante Brother's Coffee Lounge"
+              width="400" height="267" decoding="async" />
+          </picture>
 
-                      
-                    <div class="card__text">
-                        <h2 lang="en">Brother's Coffee Lounge</h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
 
-            <!-- CARD -->
-            <a href="#">
-                <div class="card">
-                  <picture>
-                    <source 
-                      srcset="
+          <div class="card__text">
+            <h2 lang="en">Brother's Coffee Lounge</h2>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
+
+      <!-- CARD -->
+      <a href="#">
+        <div class="card">
+          <picture>
+            <source srcset="
                         ./img/rabeta.jpg?as=webp&width=400&quality=50 400w,
                         ./img/rabeta.jpg?as=webp&width=800&quality=50 800w
-                      "
-                      sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                      type="image/webp" />
+                      " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/webp" />
 
-                    <source 
-                      srcset="
+            <source srcset="
                         ./img/rabeta.jpg?width=400&quality=60 400w,
                         ./img/rabeta.jpg?width=800&quality=60 800w
-                      "
-                      sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                      type="image/jpeg" />
+                      " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/jpeg" />
 
-                    <img 
-                      src="./img/rabeta.jpg?width=400&quality=70"
-                      alt="Imagen de un restaurante La Rabeta"
-                      width="400"
-                      height="267"
-                      decoding="async"
-                    />
-                  </picture>
+            <img src="./img/rabeta.jpg?width=400&quality=70" alt="Imagen de un restaurante La Rabeta" width="400"
+              height="267" decoding="async" />
+          </picture>
 
 
-                      
-                    
-                    <div class="card__text">
-                        <h2>La Rabeta</h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
 
-            <!-- CARD -->
-            <a href="#">
-                <div class="card">
-                    <picture>
-                        <source 
-                          srcset="
+
+          <div class="card__text">
+            <h2>La Rabeta</h2>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
+
+      <!-- CARD -->
+      <a href="#">
+        <div class="card">
+          <picture>
+            <source srcset="
                             ./img/mia.jpg?as=webp&width=400&quality=50 400w,
                             ./img/mia.jpg?as=webp&width=800&quality=50 800w
-                          "
-                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                          type="image/webp" />
+                          " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/webp" />
 
-                        <source 
-                          srcset="
+            <source srcset="
                             ./img/mia.jpg?width=400&quality=60 400w,
                             ./img/mia.jpg?width=800&quality=60 800w
-                          "
-                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                          type="image/jpeg" />
+                          " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/jpeg" />
 
-                        <img 
-                          src="./img/mia.jpg?width=400&quality=70"
-                          alt="Imagen de un restaurante Mia Lounge & Restaurant"
-                          width="400"
-                          height="267"
-                          decoding="async"
-                        />
-                      </picture>
+            <img src="./img/mia.jpg?width=400&quality=70" alt="Imagen de un restaurante Mia Lounge & Restaurant"
+              width="400" height="267" decoding="async" />
+          </picture>
 
-                      
-                    
-                    <div class="card__text">
-                        <h2>Mia <span>Lounge & Restaurant</span></h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
 
-            <!-- CARD -->
-            <a href="#">
-                <div class="card">
-                    <picture>
-                        <picture>
-                          <source 
-                            srcset="
+
+          <div class="card__text">
+            <h2>Mia <span>Lounge & Restaurant</span></h2>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
+
+      <!-- CARD -->
+      <a href="#">
+        <div class="card">
+          <picture>
+            <picture>
+              <source srcset="
                               ./img/rayuela.jpg?as=webp&width=400&quality=70 400w,
                               ./img/rayuela.jpg?as=webp&width=800&quality=70 800w
-                            "
-                            sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                            type="image/webp" />
+                            " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/webp" />
 
-                          <source 
-                            srcset="
+              <source srcset="
                               ./img/rayuela.jpg?width=400&quality=70 400w,
                               ./img/rayuela.jpg?width=800&quality=70 800w
-                            "
-                            sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-                            type="image/jpeg" />
+                            " sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px" type="image/jpeg" />
 
-                          <img 
-                            src="./img/rayuela.jpg?width=400&quality=70"
-                            alt="Imagen de un restaurante La Rayuela"
-                            width="400"
-                            height="267"
-                            decoding="async"
-                            fetchpriority="high"
-                          />
-                        </picture>
+              <img src="./img/rayuela.jpg?width=400&quality=70" alt="Imagen de un restaurante La Rayuela" width="400"
+                height="267" decoding="async" fetchpriority="high" />
+            </picture>
 
-                    <div class="card__text">
-                        <h2>La Rayuela</h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
+            <div class="card__text">
+              <h2>La Rayuela</h2>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
 
-            <!-- CARD -->
-            <a href="#">
-                <div class="card">
-                    <picture>
-                        <source 
-                          srcset="
+      <!-- CARD -->
+      <a href="#">
+        <div class="card">
+          <picture>
+            <source srcset="
                             ./img/dante.jpg?as=webp&width=400 1x,
                             ./img/dante.jpg?as=webp&width=800 2x
-                          "
-                          type="image/webp" />
-                      
-                        <source 
-                          srcset="
+                          " type="image/webp" />
+
+            <source srcset="
                             ./img/dante.jpg?width=400 1x,
                             ./img/dante.jpg?width=800 2x
-                          "
-                          type="image/jpeg" />
-                      
-                        <img 
-                          src="./img/dante.jpg?width=400" 
-                          alt="Imagen de un restaurante Dante" />
-                      </picture>
-                      
-                    
-                    <div class="card__text">
-                        <h2>Dante <span lang="en">Sky Bar</span></h2>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-            <!-- fin CARD -->
-            
-            
+                          " type="image/jpeg" />
 
-        </article>
-
-        
-    </main>
+            <img src="./img/dante.jpg?width=400" alt="Imagen de un restaurante Dante" />
+          </picture>
 
 
-    <include src="src/layouts/footer.html"></include><!-- footer -->
-    <script defer type="module" src="./scripts/app.js" ></script>
+          <div class="card__text">
+            <h2>Dante <span lang="en">Sky Bar</span></h2>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </a>
+      <!-- fin CARD -->
+
+
+
+    </article>
+
+
+  </main>
+
+
+  <include src="src/layouts/footer.html"></include><!-- footer -->
+  <script defer type="module" src="./scripts/app.js"></script>
 </body>
+
 </html>
