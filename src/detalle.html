@@ -24,24 +24,51 @@
     <main>
         <div class="banner">
           <picture>
+
             <source 
-              media="(max-width: 600px)" 
-              srcset="./img/la-fortaleza-v2.jpg?as=webp" 
+              media="(max-width: 600px)"
+              srcset="
+                ./img/la-fortaleza-v2.jpg?as=webp&width=600&quality=40 600w,
+                ./img/la-fortaleza-v2.jpg?as=webp&width=900&quality=40 900w
+              "
+              sizes="(max-width: 600px) 100vw"
               type="image/webp" />
-          
+
             <source 
-              media="(max-width: 600px)" 
-              srcset="./img/la-fortaleza-v2.jpg" 
+              media="(max-width: 600px)"
+              srcset="
+                ./img/la-fortaleza-v2.jpg?width=600&quality=50 600w,
+                ./img/la-fortaleza-v2.jpg?width=900&quality=50 900w
+              "
+              sizes="(max-width: 600px) 100vw"
               type="image/jpeg" />
-          
+
             <source 
-              srcset="./img/la-fortaleza.jpg?as=webp" 
+              srcset="
+                ./img/la-fortaleza.jpg?as=webp&width=1200&quality=60 1200w,
+                ./img/la-fortaleza.jpg?as=webp&width=1600&quality=60 1600w
+              "
+              sizes="100vw"
               type="image/webp" />
-          
+
+            <source 
+              srcset="
+                ./img/la-fortaleza.jpg?width=1200&quality=60 1200w,
+                ./img/la-fortaleza.jpg?width=1600&quality=60 1600w
+              "
+              sizes="100vw"
+              type="image/jpeg" />
+
             <img 
-              src="./img/la-fortaleza.jpg" 
-              alt="Imagen de un restaurante La Fortaleza" />
+              src="./img/la-fortaleza.jpg?width=1200&quality=70"
+              alt="Imagen de un restaurante La Fortaleza"
+              width="1200"
+              height="675"
+              decoding="async"
+              fetchpriority="high"
+            />
           </picture>
+
         </div>
         
         <section class="container details">
@@ -69,24 +96,101 @@
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="./img/carnes1.jpg?as=webp" type="image/webp" />
-                      <img src="./img/carnes1.jpg" alt="Platillo con cortes de carne">
+                      <source 
+                        srcset="
+                          ./img/carnes1.jpg?as=webp&width=400&quality=40 400w,
+                          ./img/carnes1.jpg?as=webp&width=800&quality=40 800w
+                        "
+                        sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                        type="image/webp" />
+
+                      <source 
+                        srcset="
+                          ./img/carnes1.jpg?width=400&quality=60 400w,
+                          ./img/carnes1.jpg?width=800&quality=60 800w
+                        "
+                        sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                        type="image/jpeg" />
+
+                      <img 
+                        src="./img/carnes1.jpg?width=400&quality=70"
+                        alt="Platillo con cortes de carne"
+                        width="400"
+                        height="267"
+                        decoding="async"
+                      />
                     </picture>
+
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="./img/carnes2.jpg?as=webp" type="image/webp" />
-                      <img src="./img/carnes2.jpg" alt="Carnes a la parrilla">
+                      <source 
+                        srcset="
+                          ./img/carnes2.jpg?as=webp&width=400&quality=40 400w,
+                          ./img/carnes2.jpg?as=webp&width=800&quality=40 800w
+                        "
+                        sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                        type="image/webp" />
+
+                      <source 
+                        srcset="
+                          ./img/carnes2.jpg?width=400&quality=60 400w,
+                          ./img/carnes2.jpg?width=800&quality=60 800w
+                        "
+                        sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                        type="image/jpeg" />
+
+                      <img 
+                        src="./img/carnes2.jpg?width=400&quality=70"
+                        alt="Carnes a la parrilla"
+                        width="400"
+                        height="267"
+                        decoding="async"
+                        loading="lazy"
+                      />
                     </picture>
+
                   </div>
                   <div class="swiper-slide">
-                    <picture>
-                      <source srcset="./img/vinos.jpg?as=webp" type="image/webp" />
-                      <img src="./img/vinos.jpg" alt="Botellas de vino">
-                    </picture>
+                      <picture>
+                        <source 
+                          srcset="
+                            ./img/vinos.jpg?as=webp&width=400&quality=40 400w,
+                            ./img/vinos.jpg?as=webp&width=800&quality=40 800w
+                          "
+                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                          type="image/webp" />
+
+                        <source 
+                          srcset="
+                            ./img/vinos.jpg?width=400&quality=60 400w,
+                            ./img/vinos.jpg?width=800&quality=60 800w
+                          "
+                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                          type="image/jpeg" />
+
+                        <img 
+                          src="./img/vinos.jpg?width=400&quality=70"
+                          alt="Botellas de vino"
+                          width="400"
+                          height="267"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </picture>
+
                   </div>
                   <div class="swiper-slide">
-                    <video src="./img/video/grill.mp4" muted controls loop></video>
+                    <video 
+                        src="./img/video/grill.mp4" 
+                        muted 
+                        autoplay 
+                        playsinline 
+                        loop 
+                        preload="metadata"
+                        width="100%" 
+                        height="auto">
+                    </video>
                   </div>
                 </div>
               
