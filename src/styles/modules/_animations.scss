@@ -53,6 +53,9 @@
   	height: 2em;
 	fill: rgba(255, 255, 255, 0.356);
 	animation: funIcon 5s ease-in-out infinite;
+
+	content-visibility: auto;
+  	contain-intrinsic-size: 200px;
 }
 
 @keyframes funIcon {
