@@ -32,28 +32,28 @@
             <a href="detalle.html">
                 <div class="card">
                     <picture>
-                        <source 
-                          srcset="
-                            ./img/la-fortaleza.jpg?as=webp&width=400 400w,
-                            ./img/la-fortaleza.jpg?as=webp&width=800 800w
-                          "
-                          sizes="(max-width: 768px) 400px, 800px"
-                          type="image/webp" />
-                        
-                        <source 
-                          srcset="
-                            ./img/la-fortaleza.jpg?width=400 400w,
-                            ./img/la-fortaleza.jpg?width=800 800w
-                          "
-                          sizes="(max-width: 768px) 400px, 800px"
-                          type="image/jpeg" />
-                        
-                        <img 
-                          src="./img/la-fortaleza.jpg?width=400"
-                          alt="Imagen de un restaurante La Fortaleza"
-                          width="400"
-                          height="auto" />
-                      </picture>
+                      <source 
+                        srcset="
+                          ./img/la-fortaleza.jpg?as=webp&width=400&quality=80 400w,
+                          ./img/la-fortaleza.jpg?as=webp&width=800&quality=80 800w
+                        "
+                        sizes="(max-width: 768px) 400px, 800px"
+                        type="image/webp" />
+                      
+                      <source 
+                        srcset="
+                          ./img/la-fortaleza.jpg?width=400&quality=85 400w,
+                          ./img/la-fortaleza.jpg?width=800&quality=85 800w
+                        "
+                        sizes="(max-width: 768px) 400px, 800px"
+                        type="image/jpeg" />
+                      <img 
+                        src="./img/la-fortaleza.jpg?width=400&quality=85"
+                        alt="Imagen de un restaurante La Fortaleza"
+                        width="400"
+                        height="auto"
+                        decoding="async" />
+                    </picture>
 
                     
                     <div class="card__text">
