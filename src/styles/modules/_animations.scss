@@ -76,6 +76,9 @@ svg {
   
 .nosotros__saladAniimation{
 	width: 7rem;
+
+	content-visibility: auto;
+  	contain-intrinsic-size: 200px;
 }
 
 #Layer_6, 
