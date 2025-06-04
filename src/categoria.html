@@ -127,7 +127,6 @@
                       alt="Imagen de un restaurante La Rabeta"
                       width="400"
                       height="267"
-                      loading="lazy"
                       decoding="async"
                     />
                   </picture>
@@ -168,7 +167,6 @@
                           alt="Imagen de un restaurante Mia Lounge & Restaurant"
                           width="400"
                           height="267"
-                          loading="lazy"
                           decoding="async"
                         />
                       </picture>
@@ -187,26 +185,33 @@
             <a href="#">
                 <div class="card">
                     <picture>
-                        <source 
-                          srcset="
-                            ./img/rayuela.jpg?as=webp&width=400 1x,
-                            ./img/rayuela.jpg?as=webp&width=800 2x
-                          "
-                          type="image/webp" />
-                      
-                        <source 
-                          srcset="
-                            ./img/rayuela.jpg?width=400 1x,
-                            ./img/rayuela.jpg?width=800 2x
-                          "
-                          type="image/jpeg" />
-                      
-                        <img 
-                          src="./img/rayuela.jpg?width=400" 
-                          alt="Imagen de un restaurante La Rayuela" />
-                      </picture>
-                      
-                    
+                        <picture>
+                          <source 
+                            srcset="
+                              ./img/rayuela.jpg?as=webp&width=400&quality=70 400w,
+                              ./img/rayuela.jpg?as=webp&width=800&quality=70 800w
+                            "
+                            sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                            type="image/webp" />
+
+                          <source 
+                            srcset="
+                              ./img/rayuela.jpg?width=400&quality=70 400w,
+                              ./img/rayuela.jpg?width=800&quality=70 800w
+                            "
+                            sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
+                            type="image/jpeg" />
+
+                          <img 
+                            src="./img/rayuela.jpg?width=400&quality=70"
+                            alt="Imagen de un restaurante La Rayuela"
+                            width="400"
+                            height="267"
+                            decoding="async"
+                            fetchpriority="high"
+                          />
+                        </picture>
+
                     <div class="card__text">
                         <h2>La Rayuela</h2>
                         <i class="fa-regular fa-heart"></i>
