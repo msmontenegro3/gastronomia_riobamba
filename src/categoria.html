@@ -149,22 +149,30 @@
                     <picture>
                         <source 
                           srcset="
-                            ./img/mia.jpg?as=webp&width=400 1x,
-                            ./img/mia.jpg?as=webp&width=800 2x
+                            ./img/mia.jpg?as=webp&width=400&quality=50 400w,
+                            ./img/mia.jpg?as=webp&width=800&quality=50 800w
                           "
+                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
                           type="image/webp" />
-                      
+
                         <source 
                           srcset="
-                            ./img/mia.jpg?width=400 1x,
-                            ./img/mia.jpg?width=800 2x
+                            ./img/mia.jpg?width=400&quality=60 400w,
+                            ./img/mia.jpg?width=800&quality=60 800w
                           "
+                          sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
                           type="image/jpeg" />
-                      
+
                         <img 
-                          src="./img/mia.jpg?width=400" 
-                          alt="Imagen de un restaurante Mia Lounge & Restaurant" />
+                          src="./img/mia.jpg?width=400&quality=70"
+                          alt="Imagen de un restaurante Mia Lounge & Restaurant"
+                          width="400"
+                          height="267"
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </picture>
+
                       
                     
                     <div class="card__text">
